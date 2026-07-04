@@ -1,5 +1,5 @@
 {
-  "name": "Personal Linux Lab",
+  "name": "Cave Linux Lab",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 
   "features": {
@@ -7,9 +7,7 @@
     "ghcr.io/devcontainers/features/git:1": {}
   },
 
-
-"postCreateCommand": "sudo apt-get update && sudo apt-get install -y git-lfs ansible shellcheck yamllint tree vim nano curl wget iputils-ping net-tools dnsutils",
-#  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y ansible shellcheck yamllint tree vim nano curl wget iputils-ping net-tools dnsutils",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y git-lfs ansible shellcheck yamllint tree vim nano curl wget iputils-ping net-tools dnsutils",
 
   "customizations": {
     "vscode": {
