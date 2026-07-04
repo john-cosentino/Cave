@@ -17,7 +17,7 @@ def send_groupme_message(text: str) -> None:
 
     response = requests.post(
         "https://api.groupme.com/v3/bots/post",
-        json={
+        params={
             "bot_id": GROUPME_BOT_ID,
             "text": text,
         },
