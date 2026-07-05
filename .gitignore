@@ -33,3 +33,4 @@ tmp/
 # Lab-generated output
 labs/**/results/
 labs/**/playground/
+.venv-*/
