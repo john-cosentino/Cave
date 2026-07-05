@@ -39,7 +39,7 @@ def build_reply(sender_name: str, message_text: str) -> str | None:
     if "help" in lowered:
         return (
             "Cave Bot commands: "
-            "cavebot help, cavebot ping, cavebot vibe, cavebot rules"
+            "cavebot help, cavebot ping, cavebot status, cavebot vibe, cavebot rules"
         )
 
     if "ping" in lowered:
@@ -48,8 +48,17 @@ def build_reply(sender_name: str, message_text: str) -> str | None:
     if "vibe" in lowered:
         return "The Cave is operational. Morale is questionable but stable."
 
+    if "status" in lowered:
+        return "Cave Bot status: online. Webhook is running. GroupMe posting works."
+
     if "rules" in lowered:
         return "Cave rules: be funny, don't be a jerk, and don't make the bot sentient before lunch."
+
+#    if "vibe" in lowered:
+#        return "The Cave is operational. Morale is questionable but stable."
+#
+#    if "rules" in lowered:
+#        return "Cave rules: be funny, don't be a jerk, and don't make the bot sentient before lunch."
 
     return f"Hey {sender_name}, Cave Bot heard you. Try: cavebot help"
 
