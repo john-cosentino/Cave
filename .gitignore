@@ -34,3 +34,4 @@ tmp/
 labs/**/results/
 labs/**/playground/
 .venv-*/
+*.py[cod]
